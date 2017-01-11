@@ -1,0 +1,298 @@
+body,div,ul,li,a,span,input,img,i,h1,h2,h3,h4,dl,dt,dd,b,textarea{padding: 0;margin: 0;}
+li{list-style: none;}
+img{border: 0 none;vertical-align: top;}
+a{text-decoration: none;color: #000000; -webkit-tap-highlight-color:rgba(0,0,0,0); /*ios去除a链接的背景效果*/ }
+img,input,textarea{outline: none;}
+html{font-size: 625%;/*等于100px.1rem=16px*/height: 100%;}
+body{font-family: "微软雅黑";font-size:0.34rem;color: #000;max-width: 750px;min-width: 320px;margin: 0 auto;height: 100%;}
+input[type=button], input[type=submit], input[type=file], button { cursor: pointer; -webkit-appearance: none; }
+.clearfix{*zoom:1;}
+.clearfix:after{content: "."; visibility: hidden;clear: both;display: block;height: 0;font-size: 0;}
+.bg(@url,@repeat,@x,@y){
+    background: url("../images/@{url}") @repeat @x @y;
+}
+a:hover{//ios去除a：hover的背景效果
+    -webkit-tap-highlight-color:rgba(0,0,0,0);  
+}
+
+/*index*/
+/*body*/
+.header{width: 100%;height: 0.99rem;line-height: 0.99rem;box-sizing:border-box;padding:0 0.25rem 0.37rem;font-size: 0.26rem;
+    .header_left{
+        float:left;width: 50%;height: 0.99rem;
+    }
+    .header_right{
+        float:right;width: 50%;height: 0.99rem;color: #666666;text-align: right;
+    }
+}
+.slide{width: 100%;height: 3rem;overflow:hidden;
+    .slide_box{
+        width: 300%;height:3rem;
+        a{
+            float: left;width: 33%;height: 3rem;
+            img{
+                display: block;width: 100%;height: 3rem;
+            }
+        }
+        
+    }
+
+}
+.nav{
+    width:7.19rem;height: auto;margin: 0.25rem auto 0;
+    li{
+        width: 100%;height: 1.5rem;margin-bottom:0.15rem ;text-align:center;line-height: 1.5rem;
+        a{display:block;width: 3.5rem;height: 1.5rem;}
+        .nav_left01{float: left;.bg("nav01.png",no-repeat,0,0);background-size: 100% 100%;}
+        .nav_right02{float:right;.bg("nav02.png",no-repeat,0,0);background-size: 100% 100%;}
+        .nav_left03{float: left;.bg("nav03.png",no-repeat,0,0);background-size: 100% 100%;}
+        .nav_right04{float:right;.bg("nav04.png",no-repeat,0,0);background-size: 100% 100%;}
+        .nav_left05{float: left;.bg("nav05.png",no-repeat,0,0);background-size: 100% 100%;}
+        .nav_right06{float:right;.bg("nav06.png",no-repeat,0,0);background-size: 100% 100%;}
+    }
+}
+.car_footer{
+    width: 100%;height: 0.7rem;text-align: center;line-height: 0.7rem;color: #666;font-size: 0.26rem;margin:0.47rem 0 1.7rem;
+}
+.bottom_nav{
+   position: fixed;left: 0;bottom: 0; width: 100%;height: 0.99rem;border-top: 1px #c7c7cd solid;z-index: 5;background: #fff;
+   .bottom_nav_list{
+       width: 4.46rem;height: 0.99rem;margin: 0 auto;
+       li{float: left;width: 50%;height: 100%;padding-top: 0.14rem;
+            a{display:block;width: 0.49rem;height: 0.75rem;.bg("sprite.png",no-repeat,0,0);background-size: 0.93rem 2.34rem; text-indent: -99em;overflow: hidden;
+            }
+       }
+       .bottom_left a{background-position: 0 0;}
+       .bottom_right a{margin-left: 1.71rem;background-position:-0.49rem 0;}
+       
+   }
+}
+
+
+/*sellCar*/
+
+.sellcar_header{position:absolute;left:0;top:0;width:100%;height: 0.8rem;padding: 0 0.22rem;font-size: 0.26rem;color: #666;line-height: 0.8rem;border-bottom: #f7f7f7 solid 1px;box-sizing: border-box;z-index: 3;background: #fff;
+   
+        li{float: left;width: auto;height: 100%;margin: 0 0.88rem;}
+
+}
+ #scroller{position: relative;}
+.up{position:absolute;left:0;top:-0.8rem;width:100%;line-height:0.8rem;text-align: center;color: #C1C1C1;font-size: 0.26rem;}
+.down{position: absolute;left: 0;bottom: -0.99rem;width: 100%;width:100%;line-height:0.8rem;text-align: center;color: #C1C1C1;font-size: 0.26rem;}
+
+.sellcar_list{position:absolute;left:0;top:0.8rem;bottom:0.99rem;width: 100%;height: auto;border-bottom: #e5e5e5 solid 1px;z-index: 1;
+            li{padding: 0.25rem 0.25rem 0.15rem;box-sizing: border-box;border-bottom: 1px solid #e5e5e5;
+                a{display: block;
+                    div{float: left;}
+                    .sellcar_img{width: 2rem;height: 1.48rem;border: #e5e5e5 solid 1px;
+                        img{width: 100%;}
+                    }
+                    .sellcar_price{width:auto;height: 1.48rem;
+                        h4{width: 100%;height: 0.42rem;font-size: 0.32rem;padding-left: 0.1rem;}
+                        dl{width: auto;height: 0.47rem;margin-top: 0.6rem;padding-left: 0.1rem;color: #d5d713;line-height: 0.47rem;
+                            
+                            .s_p01{float: left;
+                                span{font-size: 0.32rem;}
+                                i{font-style: normal;font-size: 0.2rem;}
+                              }
+                            .s_p02{float:right;font-size: 0.2rem;color: #c1c1c1;font-weight: 500;}
+                        }
+                    }
+                }
+            }
+}
+/*筛选*/
+.fix{position:fixed;left:-100%;top:0;width: 100%;height: 100%;background: rgba(0,0,0,0.6);z-index: 20;overflow-y: auto;transition: all 0.5s;
+    .screen{position:fixed;left:-100%;top:0;width:75%;height: 100%;background: #fff;line-height:0.8rem ;font-size: 0.32rem;transition: all 0.5s;
+    a{display: block;width:100%;height: 100%;}
+    li{width: 100%;height: auto;border-bottom: #999 solid 1px;padding-left: 0.5rem;box-sizing: border-box;background: #fff;line-height: 0.8rem;
+        ul{width: 100%;height: auto;padding-bottom: 0.2rem;
+            ul{
+                li{border-bottom: #999 dashed 1px;}
+                }
+            
+        }
+    }
+    }
+}
+
+.fix_btn{position:fixed;left:-100%;bottom:0;width: 75%;background: #fff;z-index: 99;transition: all 0.5s;
+    .fix_text{
+        line-height: 0.5rem;
+        font-size: 0.3rem;
+        padding: 0.3rem;
+        overflow: hidden;
+        b{float: left;}
+        span{float:left;border: 1px #000000 solid;padding: 0.02rem 0.1rem;}
+    }
+    .fix_input{width: 100%;height: 0.8rem;padding-top: 0.2rem;
+        input{float: right;width: 1.1rem;height: 0.6rem;line-height: 0.6rem;text-align: center;border: 0 none;margin-right: 0.15rem;color: #fff;font-size: 0.3rem;}
+        .cancel{background: #C2C2C2;}
+        .submit{background: red;}
+    }
+}
+
+.fix_in{left: 0;transition: all 0.5s; 
+    .screen_in{left: 0;transition: all 0.5s; }
+    .fix_btn_in{left:0;transition: all 0.5s; }
+    
+}
+/*car详情*/
+#details{background: #f1f1f1;
+    .details_content{width: 100%;height: auto;border-bottom: #c8c7cc 1px solid;padding: 0 0.3rem;margin-top: 0.15rem;background: #fff;box-sizing: border-box;
+        .content_list{padding-top:0.23rem;line-height: 0.56rem;color: #b9b9b9;font-size: 0.26rem;box-sizing: border-box;
+            li{width: 100%;height: 0.56rem;
+                h3{font-size: 0.32rem;color: #000;}
+                span{float: left;margin-right: 0.92rem;}
+                
+            }
+            
+        }
+        
+        .details_price{width: 100%;height: 1.08rem;line-height: 1.08rem;color: #d5d713;}
+        
+     
+    }
+    .details_pz{padding: 0.32rem 0.5rem 0.25rem 0.3rem;font-size: 0.26rem;color: #c7c7cd;height: auto;box-sizing: border-box;
+        span{
+            float: left;
+        }
+        .pz_left{width: 0.8rem;}
+        .pz_right{width: 5.9rem;}
+    }
+    
+    .details_dz{width: 100%;height: auto;padding: 0.32rem 0.5rem 0.25rem 0.3rem;box-sizing: border-box;
+        h3{width: 100%;height: 0.48rem;font-size: 0.32rem;}
+        .details_name{font-size: 0.26rem;color:#c1c1c1;}
+    }
+    
+    
+   
+}
+
+.tel_nav{padding: 0.3rem 2.57rem 0;}
+.tel{display:block; height: 0.46rem;.bg("sprite.png",no-repeat,0,0);background-position: 0 -1.88rem;background-size: 0.93rem 2.34rem; box-sizing: border-box;padding-left: 0.48rem;color: #999999;font-size: 0.34rem;}
+
+
+/*mysellcar*/
+.mysellcar_header{position:fixed;left:0;top:0;width: 100%;height: 1.19rem;padding:0.24rem 1.8rem;box-sizing: border-box;margin-bottom: 0.15rem;z-index: 3;background: #fff;
+        .mysellcar_release{display: block;width: 3.82rem;height: 0.66rem;border: 1px #ecee11 solid;background: #fff;text-align: center;color: #dadc3c;font-size: 0.26rem;line-height: 0.66rem;}
+}
+
+.mysellcar_list{position:fixed;left:0;top:1.19rem;bottom:1rem;width: 100%;height: auto;z-index: 1;
+    li{width: 100%;height: 2.04rem;padding: 0.15rem 0.27rem 0.19rem 0;box-sizing: border-box;border-bottom: 1px solid #e5e5e5;background: #fff;
+        a{display: block}
+            .mysellcar_list01{width: 100%;height: 1.5rem;
+            dd{float: left;}
+            .mysellcar_img01{width: 0.9rem;height: 1.5rem;box-sizing: border-box;padding: 0.42rem 0.22rem 0.62rem 0.22rem;
+                i{display: block;width:0.45rem;height: 0.48rem;.bg("sprite.png",no-repeat,0,0);background-position: -0.48rem -0.75rem;background-size: 0.93rem 2.34rem;}
+                .mysellcar_select{background-position:0 -0.76rem ;}//添加选择
+            }
+            .carimg{width: 2rem;height: 1.5rem;border: 1px #e5e5e5 solid;
+                img{display:block;width: 100%;}
+            }
+            .mysellcar_title{width: 4.2rem;height: 1.5rem;padding-left:0.28rem;box-sizing: border-box;
+                h3{font-size: 0.32rem;}
+                .mysellcar_price{width: 100%;height: 0.5rem;font-size: 0.2rem;color: #d5d713;
+                    .mysellcar_left{float:left;text-align: left;font-size: 0.32rem;}
+                    i{float:left;font-style:normal;text-align: left;}
+                    .mysellcar_right{float:right;padding-top: 0.1rem;color: #c1c1c1;}
+                }
+            }
+            
+            }
+       
+    }
+}
+
+.mysellcar_bottom{position:fixed;left:0;bottom:0;width: 100%;height: 1rem;background: #d31131;text-align: center;line-height: 1rem;z-index: 3;
+    a{display: block;width: 100%;height: 100%;color: #fff;}
+}
+
+/*push.html*/
+#push{width: 100%;height: auto;background: #f1f1f1;padding-top: 0.5rem;
+    .push_glop{width: 100%;height: auto;border-top: #c8c7cc 1px solid;border-bottom: #c8c7cc 1px solid;padding: 0 0.3rem;background: #fff;box-sizing: border-box;      
+            .push_text_t{width: 100%;height: 0.9rem;border-bottom: #c8c7cc 1px solid;font-size: 0.26rem;line-height: 0.9rem;
+                div{float: left;width:50%;height: 100%;}
+                .push_right{
+                    input{float:left;border: 0 none;text-align: right;width:70%;height: 100%;box-sizing: border-box;font-size:0.26rem ;}
+                    .push_yuan{float:left;color: #C1C1C1;margin-left: 0.1rem;}
+                    a{position:relative;display: block;width: 100%;height: 0.9rem;color: #c7c7cd;text-align: right;
+                        span{margin-right: 0.7rem;}
+                        i{position:absolute;right:0.3rem;top:0.28rem;width: 0.2rem;height: 0.34rem;.bg("push_arr.png",no-repeat,0,0);background-size: 100% 100%}
+                    }
+                }   
+            }
+           .push_text_t02{border: 0 none;}
+    }
+    .push_glop01{margin-top: 0.62rem;}
+     
+    .push_configure{display:block;width: 100%;height: 0.9rem;padding: 0.27rem 0.3rem 0;box-sizing: border-box;margin-top: 1.3rem;border: 0 none;border-bottom:#c8c7cc 1px solid;font-size: 0.26rem;resize: none;}
+            
+            
+    .push_upfile{position:relative;width: 100%;height: 0.87rem;box-sizing: border-box;padding: 0 0.3rem;border-top:#c8c7cc 1px solid ;border-bottom:#c8c7cc 1px solid ;line-height: 0.87rem;background: #fff;margin: 0.33rem 0 2.3rem;
+            input{float:left;position: absolute;width: 7.2rem;height: 100%;background: 0 none;z-index: 999;border: 0 none;opacity: 0;}
+            b{float:left;display: block;width: 0.6rem;height: 0.6rem;margin-top: 0.12rem;.bg("sprite.png",no-repeat,0,0);background-size: 0.93rem 2.34rem;background-position: 0 -1.26rem;box-sizing: border-box;  }
+            span{float: left;margin-left: 0.3rem;box-sizing: border-box; }
+            i{float: right;width: 0.2rem;height: 0.34rem;.bg("push_arr.png",no-repeat,0,0);background-size: 100% 100%;margin-top: 0.28rem;}
+    }
+
+        .push_btn{width:6.8rem;height: 1rem;margin: 0 auto;
+            .push_input{width:6.8rem;height: 1rem;background: #f1f330;border-radius: 3%;border: 0 none;color: #333333;font-size: 0.34rem;}
+        }
+        
+
+}
+/*peopledetail.html*/
+.people{width:100%;height: 1.52rem;background: #fff;box-sizing: border-box;padding: 0.3rem 0 0 0.45rem;
+    .people_img{float: left;width: 0.8rem;height: 0.8rem;
+        img{display: block;width: 100%;height: 100%;border-radius: 50%;}
+    }
+    .people_title{float:left;width:auto;height: auto;padding-left: 0.2rem;
+        h3{width: auto;height: 0.5rem;line-height: 0.5rem;font-size: 0.34rem;}
+        span{display: block;color: #e5e5e5;font-size: 0.26rem;}
+    }
+}
+.people_content{margin-bottom: 3rem;}
+
+/*Entrust.html*/
+#Entrustbuycar{background: #f7f7f7;padding-bottom: 5rem;
+            .select{margin-top: 0.2rem;}
+
+}
+.mysellcar_list .Entrust{display: block;width: 100%;height: 100%;}
+.mysellcar_list .Entrust_left{float:left;width:1.1rem ;height: 1.7rem;text-align: center;line-height: 1.7rem;color: #999999;
+           
+        }
+        .mysellcar_list .Entrust_right{float:left;width: auto;height: 1.7rem;box-sizing: border-box;padding-top: 0.4rem;
+                        .Entrust_right_box{width: auto;height: auto;border-left: #c7c7cd 1px solid;padding-left: 0.6rem;
+                                 h4{width: auto;height: auto;font-size: 0.32rem;}
+                                 span{display:block;width: 3.7rem;height:0.35rem;font-size: 0.2rem;color: #b8b8b8;white-space: nowrap;text-overflow: ellipsis;overflow:hidden;/*溢出隐藏*/}
+                        }
+                   
+                    i{display:block;font-style: normal;text-align: right;color: #b8b8b8;font-size: 0.2rem;width: 6rem;margin-top: 0.1rem;}
+        }
+
+/*EntrusTconfigure.html*/
+.EntrusTf{display:block;width: 100%;height: 3.5rem;padding: 0.3rem;box-sizing: border-box;
+margin-bottom: 2rem;font-size: 0.26rem;resize: none;border: 0 none;
+
+}
+
+/*system*/
+#system{background: #cbe1ef;}
+.system_hearder{width: 100%;height: auto;
+    .system_title01{width: 100%;height:0.7rem;color: #fff;font-weight: bold;border-bottom: #001431 1px solid;background: #5c87b2;font-size: 0.12rem;line-height: 0.7rem;
+   
+    }
+    .system_title02{width: 100%;height:0.4rem ;background: #5a7fa5;text-align: right;line-height: 0.4rem;color: #fff;font-size: 0.12rem;}
+
+}
+.system_text{color: red;line-height: 3rem;text-align: center;font-size: 0.5rem;}
+
+
+
+
+
+
+
